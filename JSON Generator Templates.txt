@@ -1,0 +1,36 @@
+JSON Generator templates - Dad-Blog
+
+Users: 
+[
+  '{{repeat(100)}}',
+  {
+    name: '{{firstName()}} {{surname()}}',
+    email: '{{email()}}',
+    website: '{{company()}}.com',
+    created_at: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}'
+  }
+]
+
+Posts: 
+[
+  '{{repeat(100)}}',
+  {
+    title: '{{lorem(4, "words")}}',
+    body: '{{lorem(5, "sentences")}}',
+    user_id: '{{integer(1, 100)}}',
+    created_at: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}'
+  }
+]
+
+Comments: 
+[
+  '{{repeat(100)}}',
+  {
+    name: '{{firstName()}} {{surname()}}',
+    email: '{{email()}}',
+    body: '{{lorem(2, "sentences")}}',
+    post_id: '{{integer(1, 100)}}',
+    user_id: '{{integer(1, 100)}}',
+    created_at: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}'
+  }
+]

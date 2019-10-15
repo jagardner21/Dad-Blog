@@ -1,7 +1,7 @@
 {
   "name": "First-Knex-Server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -23,6 +23,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.19.5",
+    "morgan": "^1.9.1",
     "pg": "^7.12.1"
   }
 }
